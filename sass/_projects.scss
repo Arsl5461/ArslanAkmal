@@ -1,0 +1,49 @@
+.projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/img6.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 8rem;
+
+  // height: auto;
+  &-heading {
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 5rem;
+    color: var(--primary-color);
+  }
+
+  h1 {
+    color: white;
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  &__counter {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+
+    &--content {
+      text-align: center;
+      color: white;
+
+      i {
+        font-size: 4.5rem;
+        display: block;
+      }
+      span {
+        font-size: 5rem;
+        margin: 1rem 0;
+        display: inline-block;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+}

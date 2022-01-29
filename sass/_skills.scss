@@ -1,0 +1,137 @@
+.skills {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/skills.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  padding: 10rem 5rem;
+
+  .skill {
+    text-align: center;
+    padding: 3rem;
+
+    i {
+      color: var(--primary-color);
+      font-size: 5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2rem;
+      letter-spacing: 0.2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-bottom: 2px solid var(--primary-color);
+      border-right: 2px solid var(--primary-color);
+    }
+    &:nth-child(3) {
+      border-bottom: 2px solid var(--primary-color);
+    }
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-right: 2px solid var(--primary-color);
+    }
+  }
+}
+
+.skill-bar-box {
+  &-main {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(164, 201, 250, 0.3);
+    grid-column: 1 / -1;
+
+    &-child {
+      width: 25%;
+      background-color: var(--primary-color);
+      height: 100%;
+      animation: hundredperc 2.5s infinite cubic-bezier(1, 0, 0, 1);
+    }
+
+    .perc90 {
+      width: 90%;
+      animation: nintyperc 2.5s infinite cubic-bezier(1, 0, 0, 1);
+    }
+
+    .perc75 {
+      width: 75%;
+      animation: seventyfiveperc 2.5s infinite cubic-bezier(1, 0, 0, 1);
+    }
+
+    .perc55 {
+      width: 55%;
+      animation: fiftyfiveperc 2.5s infinite cubic-bezier(1, 0, 0, 1);
+    }
+    .perc80 {
+      width: 80%;
+      animation: perc80 2.5s infinite cubic-bezier(1, 0, 0, 1);
+    }
+  }
+}
+
+@keyframes hundredperc {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+@keyframes perc80 {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+@keyframes nintyperc {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes seventyfiveperc {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes fiftyfiveperc {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 55%;
+  }
+}

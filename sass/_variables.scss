@@ -1,0 +1,48 @@
+:root {
+  --color-primary: #040b14;
+  --color-primary-m-light: hsla(330, 100%, 23%, 0.55);
+  --color-primary-m-dark: hsla(330, 100%, 23%, 0.85);
+
+  --color-grey-dark: #2c2f3f;
+  --color-grey-light: #72747f;
+  --transition-duration: all 0.2s ease-in-out;
+  /* * Section Title font size */
+  --font-size-title: calc(2rem + 2vw);
+  /* * Section Padding */
+  --padding-section: 8vh 3vw;
+  // hover color
+  --hover-color: #149ddd;
+}
+
+html[data-theme="green"] {
+  --primary-color: rgb(15, 144, 170);
+  --secondary-color: #ff934f;
+  --text-color: #023436;
+  --bg-color: #fefcfb;
+  --nav-color: rgba(26, 55, 77, 1);
+  --menu-hover: rgb(21, 201, 236);
+  --header-box: rgba(245, 245, 245, 0.8);
+
+  --header-bg: url(../assets/header.jpg);
+}
+// --bg-color: #121420;
+
+html[data-theme="blue"] {
+  --header-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/header-blue.jpg);
+  --primary-color: rgb(92, 122, 234);
+  --text-color: #fff;
+  --header-box: rgba(66, 24, 24, 0.8);
+  --menu-hover: rgb(41, 65, 153);
+  --nav-color: rgb(101, 130, 238);
+}
+
+html[data-theme="orange"] {
+  --header-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/header-orange.jpg);
+  --primary-color: rgb(254, 126, 109);
+  --text-color: #fff;
+  --header-box: rgba(0, 0, 0, 0.8);
+  --menu-hover: rgb(211, 57, 36);
+  --nav-color: rgb(218, 115, 102);
+}
